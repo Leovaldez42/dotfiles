@@ -5,13 +5,14 @@ ZSH_THEME="leovaldez"
 # DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to enable command auto-correction.
+#ENABLE_CORRECTION="true"
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 
 plugins=(git web-search)
 
-
+export CHROME_EXECUTABLE="/Applications/Arc.app/Contents/MacOS/Arc"
 source $ZSH/oh-my-zsh.sh
 # -------
 # Aliases
@@ -30,17 +31,9 @@ alias ll="ls -al" # List all files in current directory in long list format
 alias o="open ." # Open the current directory in Finder
 alias cls="printf '\33c\e[3J'"
 alias g++="g++ --std=gnu++17"
+alias z='zed .'
 # ----------------------
 # Git Aliases
 # ----------------------
 alias ga='git add'
 alias gaa='git add .'
-alias gaaa='git add -A'
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gd='git diff'
-alias gi='git init'
-alias gl='git log'
-alias gp='git pull'
-alias gpsh='git push'
-alias gss='git status -s'
